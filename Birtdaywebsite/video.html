@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Your Surprise Video ❤️</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<section class="video-page">
+
+
+<h1>
+For You, With All My Love ❤️
+</h1>
+
+
+
+<video 
+class="surprise-video" 
+controls
+id="myVideo">
+
+
+<source src="videos/birthday-wish.mp4" type="video/mp4">
+
+
+Your browser does not support video.
+
+</video>
+
+
+
+<!-- Button appears after video completion -->
+
+<div id="nextButton" style="display:none;">
+
+
+<a href="sorry.html">
+
+<button>
+A Promise From My Heart......💌
+</button>
+
+</a>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+<script>
+
+
+let video = document.getElementById("myVideo");
+
+
+let button = document.getElementById("nextButton");
+
+
+
+video.onended = function(){
+
+
+    button.style.display="block";
+
+
+};
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
+
